@@ -90,6 +90,9 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
               decoration: InputDecoration(
                 hintText: 'Title',
                 hintStyle: GoogleFonts.dmSerifDisplay(color: Colors.grey),
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
               ),
               style: GoogleFonts.dmSerifDisplay(
                 fontWeight: FontWeight.bold,
@@ -107,6 +110,9 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
               decoration: InputDecoration(
                 hintText: 'Description',
                 hintStyle: GoogleFonts.dmSerifDisplay(color: Colors.grey),
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
               ),
               style: GoogleFonts.dmSerifDisplay(fontSize: 16),
             ),

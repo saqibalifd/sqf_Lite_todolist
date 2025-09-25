@@ -59,6 +59,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: FutureBuilder<List<Map<String, dynamic>>>(
         future: notes,
         builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
           // Loading state
           if (!snapshot.hasData)
             return const Center(child: CircularProgressIndicator());
