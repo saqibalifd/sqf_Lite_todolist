@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
           }
           // Loading state
           if (!snapshot.hasData)
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: Text('Todo List is Empty'));
 
           // Empty state
           if (snapshot.data!.isEmpty) {
